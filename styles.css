@@ -160,3 +160,79 @@ img {
     border-radius: 999px;
     cursor: pointer;
 }
+
+/* ---------- Secciones generales ---------- */
+.seccion {
+    padding: var(--espacio-xl) 0;
+}
+
+.seccion--alterna {
+    background-color: var(--color-alterno);
+}
+
+.seccion__titulo {
+    font-size: 2rem;
+    color: var(--color-oscuro);
+    margin-bottom: var(--espacio-lg);
+    text-align: center;
+}
+
+.seccion__titulo::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: var(--espacio-sm) auto 0;
+    background-color: var(--color-secundario);
+    border-radius: 2px;
+}
+
+/* ---------- Sobre mí ---------- */
+.sobre-mi__texto {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+/* ---------- Habilidades ---------- */
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--espacio-lg);
+    list-style: none;
+}
+
+.habilidad {
+    flex: 1 1 180px;
+    max-width: 200px;
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: var(--espacio-lg) var(--espacio-md);
+    text-align: center;
+}
+
+.habilidad__icono {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-bottom: var(--espacio-md);
+    border-radius: 50%;
+    background-color: var(--color-primario);
+    color: var(--color-claro);
+    font-weight: 700;
+}
+
+.habilidad__nombre {
+    color: var(--color-oscuro);
+    font-size: 1.1rem;
+    margin-bottom: var(--espacio-sm);
+}
+
+.habilidad__detalle {
+    font-size: 0.9rem;
+}
