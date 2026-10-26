@@ -343,3 +343,94 @@ img {
     text-decoration: none;
     font-weight: 600;
 }
+
+/* =========================================================
+   Estilos finales: efectos :hover, transiciones y responsive
+   ========================================================= */
+
+.menu__enlace,
+.boton,
+.habilidad,
+.proyecto,
+.proyecto__enlace,
+.pie__enlace,
+.formulario__campo {
+    transition: all var(--transicion);
+}
+
+.menu__enlace:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-oscuro);
+}
+
+.boton:hover {
+    background-color: var(--color-primario-oscuro);
+    transform: translateY(-3px);
+    box-shadow: var(--sombra);
+}
+
+.habilidad:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-secundario);
+    box-shadow: var(--sombra);
+}
+
+.proyecto:hover {
+    transform: scale(1.03);
+}
+
+.proyecto__enlace:hover,
+.pie__enlace:hover {
+    text-decoration: underline;
+    color: var(--color-secundario);
+}
+
+.formulario__campo:hover,
+.formulario__campo:focus {
+    border-color: var(--color-primario);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* ---------- Diseño adaptable (tablets y celulares) ---------- */
+@media (max-width: 820px) {
+    .encabezado {
+        position: static;
+    }
+
+    .encabezado__contenido,
+    .principal__contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu__lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--espacio-sm);
+    }
+
+    .principal__titulo {
+        font-size: 1.8rem;
+    }
+
+    .principal__descripcion {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .principal__imagen {
+        flex-basis: auto;
+        order: -1;
+    }
+
+    .avatar {
+        width: 200px;
+        height: 200px;
+    }
+
+    .pie__contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
