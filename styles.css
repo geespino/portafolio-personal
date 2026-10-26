@@ -1,0 +1,71 @@
+/* =========================================================
+   Portafolio personal - Genesis Espinoza
+   Hoja de estilos principal
+   ========================================================= */
+
+/* ---------- Variables globales ---------- */
+:root {
+    --color-primario: #4f46e5;
+    --color-primario-oscuro: #3730a3;
+    --color-secundario: #14b8a6;
+    --color-oscuro: #1e1b4b;
+    --color-texto: #334155;
+    --color-claro: #f8fafc;
+    --color-alterno: #eef2ff;
+    --color-borde: #c7d2fe;
+    --fuente-principal: "Poppins", Arial, Helvetica, sans-serif;
+    --espacio-sm: 0.5rem;
+    --espacio-md: 1rem;
+    --espacio-lg: 2rem;
+    --espacio-xl: 4rem;
+    --radio: 12px;
+    --sombra: 0 8px 24px rgba(30, 27, 75, 0.12);
+    --transicion: 0.3s ease;
+}
+
+/* ---------- Estilos base ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-claro);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ---------- Encabezado ---------- */
+.encabezado {
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    padding: var(--espacio-md) 0;
+}
+
+.marca__nombre {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.marca__carrera {
+    font-size: 0.9rem;
+    color: var(--color-secundario);
+}
