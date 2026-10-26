@@ -140,8 +140,8 @@ img {
 
 .avatar {
     width: 280px;
-    height: 280px;
-    border-radius: 50%;
+    height: auto;
+    border-radius: var(--radio);
     border: 6px solid var(--color-claro);
     box-shadow: var(--sombra);
 }
@@ -425,8 +425,7 @@ img {
     }
 
     .avatar {
-        width: 200px;
-        height: 200px;
+        width: 220px;
     }
 
     .pie__contenido {
