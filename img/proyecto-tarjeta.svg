@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Tarjeta de presentación hecha con CSS">
+  <rect width="400" height="240" fill="#ccfbf1"/>
+  <rect x="70" y="40" width="260" height="160" rx="16" fill="#ffffff" stroke="#5eead4" stroke-width="2"/>
+  <circle cx="130" cy="120" r="34" fill="#14b8a6"/>
+  <circle cx="130" cy="110" r="12" fill="#f0fdfa"/>
+  <path d="M108 140c4-14 12-20 22-20s18 6 22 20z" fill="#f0fdfa"/>
+  <rect x="186" y="92" width="110" height="14" rx="4" fill="#134e4a"/>
+  <rect x="186" y="116" width="90" height="10" rx="4" fill="#99f6e4"/>
+  <rect x="186" y="134" width="70" height="10" rx="4" fill="#99f6e4"/>
+</svg>
